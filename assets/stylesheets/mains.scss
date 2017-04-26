@@ -1,0 +1,66 @@
+// Place all the styles related to the mains controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.flex-grid {
+  display: flex;
+}
+
+.flex-inner-grid{
+  display: flex;
+}
+
+.flex-grid .col, .flex-inner-grid .col {
+  flex: 1;
+  text-align:center;
+}
+
+.flex-grid .col.blank-col, .flex-inner-grid .col.blank-col {
+  flex: 0.5;
+  text-align:center;
+}
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .flex-grid,
+  .flex-inner-grid{
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+  .flex-inner-grid{
+    .col {
+      width: 100%;
+      margin: 0;
+    }
+    .col.blank-col{
+      display:none;
+    }
+  }
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.flex-grid, .last-inner-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+  background: salmon;
+  padding: 20px;
+}
+
+

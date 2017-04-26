@@ -1,0 +1,84 @@
+<div>
+<% @web3.address = "0xc55Ce9041cd205006Ed4b7aa6941981FEee77741"%>
+<% @web3.eth_accounts %>
+  Current Account : <span class="current-account">Loading....</span>
+</div>
+<div>
+  Current Coinone Price : <span class="coinone-price"><%= Coinone::Public.get_ticker(currency: "eth").tickers[0].last %></span> <img src="./images/price_on.gif" alt="price-on" class="price-on" ><span class="toggle-price badge badge-primary">ON</span>
+</div>
+
+
+<div class="flex-grid">
+  <div class="col">BIG</div>
+  <div class="col">SMALL</div>
+  <div class="col">SUM_BIG</div>
+  <div class="col">SUM_SMALL</div>
+</div>
+
+<div class="flex-inner-grid">
+  <div class="col">0/950</div>
+  <div class="col">50/900</div>
+  <div class="col">100/850</div>
+  <div class="col">150/800</div>
+  <div class="col">200/750</div>
+</div>
+
+<div class="flex-inner-grid last-inner-grid">
+  <div class="col">250/700</div>
+  <div class="col">300/650</div>
+  <div class="col">350/600</div>
+  <div class="col">400/550</div>
+  <div class="col">450/500</div>
+</div>
+
+<div class="flex-inner-grid">
+  <div class="col">000</div>
+  <div class="col">050</div>
+  <div class="col">100</div>
+  <div class="col">150</div>
+  <div class="col">200</div>
+  <div class="col">250</div>
+  <div class="col">300</div>
+  <div class="col">350</div>
+  <div class="col">400</div>
+  <div class="col">450</div>
+</div>
+<div class="flex-inner-grid last-inner-grid">
+  <div class="col">500</div>
+  <div class="col">550</div>
+  <div class="col">600</div>
+  <div class="col">650</div>
+  <div class="col">700</div>
+  <div class="col">750</div>
+  <div class="col">800</div>
+  <div class="col">850</div>
+  <div class="col">900</div>
+  <div class="col">950</div>
+</div>
+
+<div class="flex-inner-grid">
+  <div class="col blank-col"></div>
+  <div class="col">0</div>
+  <div class="col">1</div>
+  <div class="col">2</div>
+  <div class="col">3</div>
+  <div class="col">4</div>
+  <div class="col">5</div>
+  <div class="col">6</div>
+  <div class="col blank-col"></div>
+</div>
+<div class="flex-inner-grid last-inner-grid">
+  <div class="col">7</div>
+  <div class="col">8</div>
+  <div class="col">9</div>
+  <div class="col">10</div>
+  <div class="col">11</div>
+  <div class="col">12</div>
+  <div class="col">13</div>
+  <div class="col">14</div>
+</div>
+
+<div class="flex-grid">
+  <div class="col">EVEN</div>
+  <div class="col">ODD</div>
+</div>
